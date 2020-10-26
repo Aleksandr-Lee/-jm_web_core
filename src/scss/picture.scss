@@ -1,0 +1,20 @@
+.picture {
+	&__img {
+	  height: 176px;
+	  width: 320px;
+	  margin: 0 0 24px -16px;
+ 
+	  @media (min-width: 768px) {
+		 height: 208px;
+		 width: 360px;
+		 border-radius: 6px;
+		 margin: 0 0 32px 32px;
+	  }
+	  @media (min-width: 1120px) {
+		 height: 307px;
+		 width: 531px;
+		 margin: 8px 0 50px 16px;
+	  }
+	}
+ }
+ 

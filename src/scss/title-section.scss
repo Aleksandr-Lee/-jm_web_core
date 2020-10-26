@@ -1,0 +1,17 @@
+.title-section {
+	border-top: 1px solid #d9fff5;
+	background: $linearGgradient;
+	&__content {
+		padding: 15px 0 16px 0;
+	}
+	&__text {
+		font-family: "TT Lakes Regular";
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.2px;
+		text-transform: uppercase;
+		color: $txtColorGrey;
+		margin: 0;
+	}
+}

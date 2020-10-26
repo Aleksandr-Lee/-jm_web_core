@@ -1,0 +1,17 @@
+@import "variables.scss";
+@import "fonts.scss";
+
+.header {
+	background-color: #ffffff;
+	border-bottom: 1px solid #d9fff5;
+ 
+	@media (min-width: 1120px) {
+	  display: none;
+	}
+	&__inner {
+	  min-height: 88px;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items: center;
+	}
+ }

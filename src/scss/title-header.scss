@@ -1,0 +1,39 @@
+
+
+.title-header {
+	&__text {
+	  font-family: "TT Lakes Bold";
+	  font-size: 28px;
+	  letter-spacing: -0.6px;
+	  margin: 0;
+	  padding-top: 24px;
+	  margin-bottom: 24px;
+	  position: relative;
+	  color: $txtColorBlack;
+ 
+	  @media (min-width: 768px) {
+		 margin-bottom: 32px;
+	  }
+	  @media (min-width: 1120px) {
+		 margin-bottom: 9px;
+		 padding-top: 42px;
+	  }
+	  &::before {
+		 content: " ";
+		 position: absolute;
+		 height: 40px;
+		 width: 4px;
+		 left: -16px;
+		 top: 22px;
+		 border-radius: 10px;
+		 background: #41f6d7;
+		 @media (min-width: 768px) {
+			left: -24px;
+		 }
+		 @media (min-width: 1120px) {
+			left: -31px;
+			top: 38px;
+		 }
+	  }
+	}
+ }

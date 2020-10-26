@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	 <link
-	 rel="stylesheet"
-	 href="https://unpkg.com/swiper/swiper-bundle.min.css"
-  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title><%= htmlWebpackPlugin.options.title %></title>
-</head>
-<body>
-
-	<!-- Основной контент
+  </head>
+  <body>
+    <!-- Основной контент
 	============================================================================-->
-	<header class="header">
+    <header class="header">
       <div class="container">
         <div class="header__inner">
           <div class="header-inner__menu-logo">
@@ -45,8 +46,8 @@
     <section class="section">
       <div class="container">
         <div class="section__header">
-          <div class="title">
-            <h1 class="title__header">Услуги и сервисы</h1>
+          <div class="title-header">
+            <h1 class="title-header__text">Услуги и сервисы</h1>
           </div>
           <div class="services">
             <label for="" class="services__text">Оставить заявку</label>
@@ -93,7 +94,7 @@
               </div>
 
               <div class="show-more">
-                <button 
+                <button
                   id="read"
                   class="button-show button-show--down"
                 ></button>
@@ -105,147 +106,150 @@
             <div class="picture">
               <img
                 class="picture__img"
-					 src="../img/MG_3223.jpg"
-					 alt="Picture"
+                src="../img/MG_3223.jpg"
+                alt="Picture"
               />
             </div>
           </div>
         </div>
       </div>
-	 </section>
-	 <div class="brands-repair">
-      <div class="brands-repair__header">
+    </section>
+    <div class="title-section">
+      <div class="title-section__content">
         <div class="container">
-          <div class="title">
-            <h2 class="title__text">Ремонт техники различных брендов</h2>
-          </div>
+          <h2 class="title-section__text">
+            Ремонт техники различных брендов
+          </h2>
         </div>
       </div>
-      <div class="brand">
+    </div>
+    <div class="brand">
+      <div class="container">
+        <div
+          class="swiper-container limit-height"
+          data-container-id="brands"
+          data-state="close"
+        >
+          <ul class="brand__list swiper-wrapper">
+            <li class="brand__item swiper-slide">
+              <a href="#" class="logo-brand">
+                <img src="img/Lenovo.svg" alt="Lenovo" />
+                <div class="button-click"></div>
+              </a>
+            </li>
+            <li class="brand__item swiper-slide">
+              <a href="#" class="logo-brand">
+                <img src="img/Samsung.svg" alt="Samsung" />
+                <div class="button-click"></div>
+              </a>
+            </li>
+            <li class="brand__item swiper-slide">
+              <a href="#" class="logo-brand">
+                <img src="img/Apple.svg" alt="Apple" />
+                <div class="button-click"></div>
+              </a>
+            </li>
+            <li class="brand__item swiper-slide">
+              <a href="#" class="logo-brand">
+                <img src="img/ViewSonic.svg" alt="ViewSonic" />
+                <div class="button-click"></div>
+              </a>
+            </li>
+            <li class="brand__item swiper-slide">
+              <a href="#" class="logo-brand">
+                <img src="img/Bosch.svg" alt="Bosch" />
+                <div class="button-click"></div>
+              </a>
+            </li>
+            <li class="brand__item swiper-slide">
+              <a href="#" class="logo-brand">
+                <img src="img/HP.svg" alt="HP" />
+                <div class="button-click"></div>
+              </a>
+            </li>
+            <li class="brand__item swiper-slide">
+              <a href="#" class="logo-brand">
+                <img src="img/Acer.svg" alt="Acer" />
+                <div class="button-click"></div>
+              </a>
+            </li>
+            <li class="brand__item swiper-slide">
+              <a href="#" class="logo-brand">
+                <img src="img/Sony.svg" alt="Sony" />
+                <div class="button-click"></div>
+              </a>
+            </li>
+            <li class="brand__item swiper-slide">
+              <a href="#" class="logo-brand">
+                <img src="img/Lenovo.svg" alt="Lenovo" />
+                <div class="button-click"></div>
+              </a>
+            </li>
+            <li class="brand__item swiper-slide">
+              <a href="#" class="logo-brand">
+                <img src="img/Samsung.svg" alt="Samsung" />
+                <div class="button-click"></div>
+              </a>
+            </li>
+            <li class="brand__item swiper-slide">
+              <a href="#" class="logo-brand">
+                <img src="img/Apple.svg" alt="Apple" />
+                <div class="button-click"></div>
+              </a>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="show-more show-more--hidden">
+          <button
+            data-container="brands"
+            id="read2"
+            class="button-show button-show--down"
+          ></button>
+          <label for="read2" class="button-show__text">Показать все</label>
+        </div>
+      </div>
+    </div>
+ 
+	 <div class="title-section">
+      <div class="title-section__content">
+        <div class="container">
+          <h2 class="title-section__text">
+				Ремонт различных видов техники
+          </h2>
+        </div>
+      </div>
+    </div>
+    
+      <div class="technics">
         <div class="container">
           <div
             class="swiper-container limit-height"
             data-container-id="brands"
             data-state="close"
           >
-            <ul class="brand__list swiper-wrapper">
-              <li class="brand__item swiper-slide">
-                <a href="#" class="logo-brand">
-                  <img src="img/Lenovo.svg" alt="Lenovo" />
-                  <div class="button-click"></div>
-                </a>
-              </li>
-              <li class="brand__item swiper-slide">
-                <a href="#" class="logo-brand">
-                  <img src="img/Samsung.svg" alt="Samsung" />
-                  <div class="button-click"></div>
-                </a>
-              </li>
-              <li class="brand__item swiper-slide">
-                <a href="#" class="logo-brand">
-                  <img src="img/Apple.svg" alt="Apple" />
-                  <div class="button-click"></div>
-                </a>
-              </li>
-              <li class="brand__item swiper-slide">
-                <a href="#" class="logo-brand">
-                  <img src="img/ViewSonic.svg" alt="ViewSonic" />
-                  <div class="button-click"></div>
-                </a>
-              </li>
-              <li class="brand__item swiper-slide">
-                <a href="#" class="logo-brand">
-                  <img src="img/Bosch.svg" alt="Bosch" />
-                  <div class="button-click"></div>
-                </a>
-              </li>
-              <li class="brand__item swiper-slide">
-                <a href="#" class="logo-brand">
-                  <img src="img/HP.svg" alt="HP" />
-                  <div class="button-click"></div>
-                </a>
-              </li>
-              <li class="brand__item swiper-slide">
-                <a href="#" class="logo-brand">
-                  <img src="img/Acer.svg" alt="Acer" />
-                  <div class="button-click"></div>
-                </a>
-              </li>
-              <li class="brand__item swiper-slide">
-                <a href="#" class="logo-brand">
-                  <img src="img/Sony.svg" alt="Sony" />
-                  <div class="button-click"></div>
-                </a>
-              </li>
-              <li class="brand__item swiper-slide">
-                <a href="#" class="logo-brand">
-                  <img src="img/Lenovo.svg" alt="Lenovo" />
-                  <div class="button-click"></div>
-                </a>
-              </li>
-              <li class="brand__item swiper-slide">
-                <a href="#" class="logo-brand">
-                  <img src="img/Samsung.svg" alt="Samsung" />
-                  <div class="button-click"></div>
-                </a>
-              </li>
-              <li class="brand__item swiper-slide">
-                <a href="#" class="logo-brand">
-                  <img src="img/Apple.svg" alt="Apple" />
-                  <div class="button-click"></div>
-                </a>
-              </li>
-            </ul>
-            <div class="swiper-pagination"></div>
-          </div>
-          <div class="show-more show-more--hidden">
-            <button
-              data-container="brands"
-              id="read2"
-              class="button-show button-show--down"
-            ></button>
-            <label for="read2" class="button-show__text">Показать все</label>
-          </div>
-        </div>
-      </div>
-	 </div>
-	 <div class="equipment-repair">
-		 <div class="equipment-repair__header">
-			<div class="container"> 
-				<div class="title">
-					<h2 class="title__text">Ремонт различных видов техники</h2>
-				 </div>
-			</div>
-		 </div>
-		 <div class="technics">
-			<div class="container">
-				<div
-            class="swiper-container"
-            data-container-id="brands"
-            data-state="close"
-          >
             <ul class="technics__list swiper-wrapper">
               <li class="technics__item swiper-slide">
                 <a href="#" class="technic-click">
-                <p>Ремонт ноутбуков</p>
+                  <p>Ремонт ноутбуков</p>
                   <div class="button-click button-click--flex"></div>
                 </a>
               </li>
               <li class="technics__item swiper-slide">
                 <a href="#" class="technic-click">
-						<p>Ремонт планшетов</p>
+                  <p>Ремонт планшетов</p>
                   <div class="button-click button-click--flex"></div>
                 </a>
               </li>
               <li class="technics__item swiper-slide">
                 <a href="#" class="technic-click">
-						<p>Ремонт ПК</p>
+                  <p>Ремонт ПК</p>
                   <div class="button-click button-click--flex"></div>
                 </a>
               </li>
               <li class="technics__item swiper-slide">
                 <a href="#" class="technic-click">
-						<p>Ремонт мониторов</p>
+                  <p>Ремонт мониторов</p>
                   <div class="button-click button-click--flex"></div>
                 </a>
               </li>
@@ -263,7 +267,7 @@
               </li>
               <li class="technics__item swiper-slide">
                 <a href="#" class="technic-click">
-						<p>Ремонт сканеров</p>
+                  <p>Ремонт сканеров</p>
                   <div class="button-click button-click--flex"></div>
                 </a>
               </li>
@@ -290,10 +294,42 @@
             ></button>
             <label for="read2" class="button-show__text">Показать все</label>
           </div>
+        </div>
+		</div>
+		
+		<div class="title-section">
+			<div class="title-section__content">
+			  <div class="container">
+				 <h2 class="title-section__text">
+					Цены на услуги
+				 </h2>
+			  </div>
 			</div>
-		 </div>	
+		 </div>
 
-	 </div>
-	 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-</body>
+		 <div class="price">
+			<div class="container">
+				<div class="swiper-container">
+					<ul>
+						<li>
+							<dl>
+								<dt>Ремотные услуги</dt>
+								<dd>Диагностика</dd>
+								<dt>Цена</dt>
+								<dd>Бесплатно</dd>
+								<dt>Срок</dt>
+								<dd>30-120 мин</dd>
+							</dl>
+							<div class="button-order">
+								<p class="button-order__text">ЗАКАЗАТЬ</p>
+								<img src="img/arrow_white.svg" alt="arrow" class="button-order__arrow">
+							</div>
+							
+						</li>
+					</ul>
+				</div>
+			</div>
+		 </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
 </html>

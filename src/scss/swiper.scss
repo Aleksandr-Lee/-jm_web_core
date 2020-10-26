@@ -1,0 +1,20 @@
+.swiper-container {
+	padding-bottom: 25px;
+	@media (min-width: 768px) {
+	  padding-bottom: 0;
+	}
+ }
+
+ .swiper-pagination {
+	&-bullet {
+	  background-color: #dddddd;
+	  width: 12px;
+	  height: 12px;
+	  opacity: 1;
+	  margin-bottom: 35px;
+	  &-active {
+		 background-color: #b5b6bc;
+	  }
+	}
+ }
+ 

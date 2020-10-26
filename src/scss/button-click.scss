@@ -1,0 +1,18 @@
+.button-click {
+	box-sizing: border-box;
+	display: block;
+	height: 40px;
+	width: 40px;
+	border: 2px solid #ff3e79;
+	border-radius: 20px;
+	background-color: #ffffff;
+	background-image: url("../img/arrow_pink.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	position: relative;
+ 
+	&--flex {
+	  align-self: flex-end;
+	}
+ }

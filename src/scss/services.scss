@@ -1,0 +1,24 @@
+
+
+.services {
+	display: none;
+ 
+	@media (min-width: 768px) {
+	  display: none;
+	}
+	@media (min-width: 1120px) {
+	  display: flex;
+	  align-items: center;
+	}
+	&__text {
+	  @media (min-width: 1120px) {
+		 font-family: "TT Lakes Medium";
+		 font-size: 16px;
+		 line-height: 24px;
+		 letter-spacing: -0.2px;
+		 color: $txtColorBlack;
+		 margin: 0 9px 0 32px;
+		 cursor: pointer;
+	  }
+	}
+ }

@@ -1,0 +1,15 @@
+
+.header-inner {
+	min-height: 88px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	&__menu-logo {
+	  display: flex;
+	  align-items: center;
+	}
+ 
+	&__connection {
+	  display: flex;
+	}
+ }

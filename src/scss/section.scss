@@ -1,0 +1,15 @@
+@import "variables.scss";
+
+.section {
+	background: $bgColor;
+ 
+	&__header {
+	  background: $bgColor;
+ 
+	  @media (min-width: 1120px) {
+		 display: flex;
+		 justify-content: space-between;
+		 align-items: baseline;
+	  }
+	}
+ }

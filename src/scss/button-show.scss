@@ -1,0 +1,23 @@
+.button-show {
+  height: 24px;
+  width: 24px;
+  border: none;
+  background: $bgColor;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  &__text {
+    font-family: "TT Lakes Medium";
+    color: $txtColorBlack;
+    margin: 0 0 16px 0;
+    cursor: pointer;
+  }
+  &--down {
+    background-image: url("../img/down.svg");
+    margin: 0 8px 16px 0;
+  }
+  &--up {
+    background-image: url("../img/up.svg");
+    margin: 0 8px 16px 0;
+  }
+}

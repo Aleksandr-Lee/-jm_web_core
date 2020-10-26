@@ -1,0 +1,33 @@
+.logo-compani {
+	position: relative;
+	margin-right: 16px;
+ 
+	@media (min-width: 768px) {
+	  position: relative;
+	  margin: 0 0 0 22px;
+	}
+	&::after {
+	  content: " ";
+	  position: absolute;
+	  height: 32px;
+	  width: 2px;
+	  right: -17px;
+	  top: 10px;
+	  background: #eaeaea;
+	  border-radius: 1px;
+ 
+	  @media (min-width: 768px) {
+		 right: 119px;
+		 top: 10px;
+	  }
+	}
+ 
+	&__click {
+	}
+ 
+	&__link {
+	}
+ 
+	&__image {
+	}
+ }

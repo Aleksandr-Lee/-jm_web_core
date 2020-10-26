@@ -1,0 +1,75 @@
+.button {
+	display: block;
+	height: 40px;
+	width: 40px;
+	background-color: #ff3e79;
+	border: none;
+	border-radius: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+ 
+	&__nav {
+	  display: block;
+	  background-image: url("../img/menu_icon.svg");
+	  margin: 0 17px 0 0;
+ 
+	  @media (min-width: 768px) {
+		 margin: 0 20px 0 0;
+	  }
+	}
+ 
+	&__tel {
+	  display: none;
+ 
+	  @media (min-width: 768px) {
+		 display: block;
+		 background-image: url("../img/tel.svg");
+		 margin: 0 16px 0 0;
+	  }
+	}
+ 
+	&__message {
+	  display: none;
+ 
+	  @media (min-width: 768px) {
+		 display: block;
+		 background-image: url("../img/message.svg");
+		 margin: 0 16px 0 0;
+	  }
+	}
+ 
+	&__contact {
+	  display: none;
+ 
+	  @media (min-width: 768px) {
+		 display: block;
+		 background-image: url("../img/contact.svg");
+		 margin: 0 19px 0 0;
+		 position: relative;
+	  }
+	  &::before {
+		 content: " ";
+		 position: absolute;
+		 height: 32px;
+		 width: 2px;
+		 right: -20px;
+		 top: 4px;
+		 background: #eaeaea;
+		 border-radius: 1px;
+	  }
+	}
+ 
+	&__service {
+	  background-image: url("../img/service.svg");
+	  margin: 0 16px 0 19px;
+ 
+	  @media (min-width: 1120px) {
+		 margin: 0;
+	  }
+	}
+ 
+	&__status {
+	  background-image: url("../img/status.svg");
+	}
+ }

@@ -1,0 +1,54 @@
+@import "variables.scss";
+@import "fonts.scss";
+
+.menu {
+	&__items {
+	}
+ 
+	&__list {
+	  display: flex;
+	  justify-content: flex-start;
+	  align-items: center;
+	  overflow-x: scroll;
+	  padding: 0;
+	  margin: 0;
+ 
+	  @media (min-width: 1120px) {
+		 flex-wrap: wrap;
+		 overflow: hidden;
+	  }
+	}
+ 
+	&__item {
+	  border: 2px solid transparent;
+	  list-style-type: none;
+	  padding: 8px 16px;
+	  margin-bottom: 24px;
+ 
+	  @media (min-width: 768px) {
+		 margin-bottom: 32px;
+	  }
+ 
+	  @media (min-width: 1120px) {
+		 margin-bottom: 0;
+	  }
+ 
+	  &:hover {
+		 border: 2px solid #41f6d7;
+	  }
+	}
+	&__item--border:hover {
+	  border: 2px solid #b8ffec;
+	  border-radius: 6px;
+	  background: #ffffff;
+	  cursor: pointer;
+	}
+	&__link {
+	  font-family: "TT Lakes Medium";
+	  font-size: 16px;
+	  letter-spacing: -0.2px;
+	  color:$txtColorGrey;
+	  text-decoration: none;
+	  white-space: nowrap;
+	}
+ }

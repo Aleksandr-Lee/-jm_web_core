@@ -1,0 +1,7 @@
+
+.limit-height {
+	@media (min-width: 768px) {
+	  max-height: 192px;
+	  overflow: hidden;
+	}
+ }

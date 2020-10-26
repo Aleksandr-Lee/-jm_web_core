@@ -1,0 +1,50 @@
+.brand {
+	background: $bgColor;
+	&__list {
+	  padding-left: 0;
+ 
+	  @media (min-width: 768px) {
+		 display: flex;
+		 justify-content: space-between;
+		 flex-wrap: wrap;
+		 padding-left: 0;
+		 position: relative;
+	  }
+	  @media (min-width: 768px) {
+		 &::after {
+			content: "";
+			width: 224px;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			left: 0;
+			@media (min-width: 1120px) {
+			  content: "";
+			  width: 240px;
+			}
+		 }
+	  }
+	}
+ 
+	&__item {
+	  box-sizing: border-box;
+	  max-width: 240px;
+	  min-height: 72px;
+	  border: 1px solid #eaeaea;
+	  border-radius: 6px;
+	  list-style: none;
+	  background: #ffffff;
+	  padding: 0 16px;
+	  cursor: pointer;
+ 
+	  @media (min-width: 768px) {
+		 box-sizing: border-box;
+		 max-width: 224px;
+		 margin-bottom: 16px;
+	  }
+	  @media (min-width: 1120px) {
+		 box-sizing: border-box;
+		 max-width: 240px;
+	  }
+	}
+ }
