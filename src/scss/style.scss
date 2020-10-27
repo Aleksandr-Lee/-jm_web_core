@@ -37,24 +37,205 @@ html {
 }
 body {
   margin: 0;
+  height: 100vh;
+}
+
+.price {
+  background: $bgColor;
+  &__list {
+    max-width: 260px;
+    //height: 200px;
+    background: #ffffff;
+    border-radius: 6px;
+	 padding: 16px;
+  }
+
+  &__item {
+    font-family: "TT Lakes Medium";
+    font-size: 14px;
+    line-height: 16px;
+    color: $txtColorGrey;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+    list-style: none;
+    //margin-bottom: 4px;
+  }
+
+  &__repairs {
+    margin-bottom: 16px;
+    font-family: "TT Lakes Regular";
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: $txtColorBlack;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__offer {
+    max-width: 421px;
+    font-family: "TT Lakes Regular";
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+	 color: $txtColorBlack;
+	 margin-bottom: 16px;
+  }
+
+  &__getoffer {
+	  display: block;
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+	 color: $txtColorBlack;
+	 text-decoration:none;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 40px;
+    &:after {
+      content: url("../img/arrow_pink.svg");
+      position: absolute;
+      top: 25px;
+		right: 170px;
+
+		@media (min-width: 768px) {
+			top: 2px;
+			right: 410px;
+		}
+    }
+  }
+}
+
+
+.button-order {
+  width: 119px;
+  height: 32px;
+  background: #ff3e79;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  align-self: flex-end;
+
+  &__text {
+    font-family: "TT Lakes Bold";
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    color: #ffffff;
+  }
+
+  &__arrow {
+  }
+}
+
+.footer {
+  border-top: 1px solid #d9fff5;
+  background: $bgColor;
+  &__content {
+    padding: 0;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  &__text {
+    font-family: "TT Lakes Medium";
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: $txtColorGrey;
+    list-style: none;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+    margin-bottom: 16px;
+    &:nth-child(3n) {
+      margin: 0;
+      padding-bottom: 19px;
+      @media (min-width: 768px) {
+        text-align: right;
+      }
+    }
+    @media (min-width: 768px) {
+      text-align: left;
+      flex: 0 1 33.33%;
+    }
+  }
 }
 
 /*.price {
   background: $bgColor;
 }
-ul {
-  padding: 0;
+.button-order {
+  width: 119px;
+  height: 32px;
+  background: #ff3e79;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  align-self: flex-end;
+
+  &__text {
+    font-family: "TT Lakes Bold";
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    color: #ffffff;
+  }
+
+  &__arrow {
+
+  }
 }
-li {
-  list-style: none;
+
+ul {
+  //padding: 0;
   max-width: 260px;
   min-height: 200px;
   background: #ffffff;
   border-radius: 6px;
-  padding:16px;
+  padding: 16px;
 }
-
-dl {
+li {
+  //display: flex;
+  font-family: "TT Lakes Medium";
+  font-size: 14px;
+  line-height: 16px;
+  color: $txtColorGrey;
+  mix-blend-mode: normal;
+  opacity: 0.72;
+  list-style: none;
+  margin-bottom: 4px;
+  &:nth-child(2n) {
+    margin-bottom: 16px;
+    font-family: "TT Lakes Regular";
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: $txtColorBlack;
+  }
+  &:nth-last-child() {
+  margin-bottom: 0;
+  }
+}
+.a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.v {
+	display: flex;
+	justify-content: space-between;
+}
+/*dl {
 	margin:0;
 }
 dt {
@@ -75,6 +256,7 @@ dd {
   color: $txtColorBlack;
 }
 
+
 .button-order {
   width: 119px;
   height: 32px;
@@ -84,13 +266,15 @@ dd {
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
+  align-self: flex-end;
 
   &__text {
     font-family: "TT Lakes Bold";
     font-size: 12px;
     line-height: 24px;
     letter-spacing: -0.15px;
-    color: #ffffff;
+	 color: #ffffff;
+	 
   }
 
   &__arrow {
