@@ -1,7 +1,11 @@
 import '../scss/style.scss';
 
+import Swiper, { Navigation, Pagination } from 'swiper';
+Swiper.use([Navigation, Pagination]);
+
+//import 'swiper/swiper-bundle.css';
 if (window.innerWidth <= 767) {
-	var swiper = new Swiper(".swiper-container", {
+	const swiper = new Swiper(".swiper-container", {
 	  slidesPerView: "auto",
 	  spaceBetween: 30,
 	  pagination: {
@@ -11,7 +15,7 @@ if (window.innerWidth <= 767) {
 	});
  }
 
- const body = document.querySelector("body");
+/* const body = document.querySelector("body");
 body.addEventListener("click", function (event) {
   if (event.target.dataset.container) {
     const containerId = event.target.dataset.container;
@@ -48,4 +52,4 @@ showHide.addEventListener("click", function () {
 });
 
 
-console.log('Works!');
+console.log('Works!');*/
