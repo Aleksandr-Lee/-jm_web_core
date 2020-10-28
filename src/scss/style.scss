@@ -1,4 +1,4 @@
-@import '../../node_modules/swiper/swiper-bundle.css';
+@import "../../node_modules/swiper/swiper-bundle.css";
 
 @import "variables.scss";
 @import "fonts.scss";
@@ -29,7 +29,7 @@ html {
   margin: 0 auto;
   box-sizing: border-box;
   min-width: 320px;
-  max-width: 1120px;
+  max-width: 1440px;
 }
 
 *,
@@ -39,7 +39,157 @@ html {
 }
 body {
   margin: 0;
+  //height: 100vh;
+}
+
+.wrapper {
+  @media (min-width: 1120px) {
+    display: flex;
+  }
+}
+.wrapper-saidbar {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  @media (min-width: 1120px) {
+	max-width: 306px;
+	min-width: 306px;
+	display: block; 
+	position: static;
+  }
+}
+  
+.saidbar-block {
+  padding: 0 24px;
+  max-width: 360px;
+  min-width: 320px;
+  width: 100%;
+  box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02),
+    16px 0 52px rgba(14, 24, 80, 0.2);
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  //position: fixed;
+  //z-index: 5;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  @media (min-width: 1120px) {
+    max-width: 306px;
+    min-width: 306px;
+    box-shadow: none;
+  }
+}
+.saidbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 23px;
+  margin-bottom: 30px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 450px;
+  height: 100%;
+}
+.menu-nav {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+  }
+
+  &__item {
+    list-style: none;
+    position: relative;
+    margin-bottom: 32px;
+    cursor: pointer;
+    &:hover::before {
+      content: " ";
+      position: absolute;
+      height: 32px;
+      width: 4px;
+      left: -24px;
+      top: -6px;
+      border-radius: 10px;
+      background: #41f6d7;
+    }
+  }
+
+  &__link {
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    color: $txtColorBlack;
+    text-decoration: none;
+    white-space: nowrap;
+    &:hover {
+      color: $txtColorGrey;
+    }
+  }
+}
+.saidbar-footer {
+}
+.contacts {
+  display: flex;
+}
+.email {
+  &__link {
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    color: $txtColorBlack;
+    text-decoration: none;
+    white-space: nowrap;
+    display: block;
+    margin-bottom: 12px;
+  }
+}
+.number {
+  margin-bottom: 40px;
+  &__link {
+    font-family: "TT Lakes Bold";
+    font-size: 24px;
+    letter-spacing: -0.6px;
+    color: $txtColorBlack;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+}
+.language {
+  &__list {
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  &__item {
+    list-style: none;
+    margin: 0 7px 32px 0;
+  }
+
+  &__link {
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    color: $txtColorBlack;
+    text-decoration: none;
+    white-space: nowrap;
+    &:hover {
+      color: $txtColorGrey;
+    }
+  }
 }
 
 .price {
@@ -49,7 +199,7 @@ body {
     //height: 200px;
     background: #ffffff;
     border-radius: 6px;
-	 padding: 16px;
+    padding: 16px;
   }
 
   &__item {
@@ -84,18 +234,18 @@ body {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
-	 color: $txtColorBlack;
-	 margin-bottom: 16px;
+    color: $txtColorBlack;
+    margin-bottom: 16px;
   }
 
   &__getoffer {
-	  display: block;
+    display: block;
     font-family: "TT Lakes Medium";
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
-	 color: $txtColorBlack;
-	 text-decoration:none;
+    color: $txtColorBlack;
+    text-decoration: none;
     cursor: pointer;
     position: relative;
     padding-bottom: 40px;
@@ -103,16 +253,15 @@ body {
       content: url("../img/arrow_pink.svg");
       position: absolute;
       top: 25px;
-		right: 170px;
+      right: 170px;
 
-		@media (min-width: 768px) {
-			top: 2px;
-			right: 410px;
-		}
+      @media (min-width: 768px) {
+        top: 2px;
+        right: 410px;
+      }
     }
   }
 }
-
 
 .button-order {
   width: 119px;

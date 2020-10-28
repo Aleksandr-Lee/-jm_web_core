@@ -1,19 +1,8 @@
 import '../scss/style.scss';
+import '../js/swiper.js';
+import '../js/modal-menu.js';
 
-import Swiper, { Navigation, Pagination } from 'swiper';
-Swiper.use([Navigation, Pagination]);
 
-//import 'swiper/swiper-bundle.css';
-if (window.innerWidth <= 767) {
-	const swiper = new Swiper(".swiper-container", {
-	  slidesPerView: "auto",
-	  spaceBetween: 30,
-	  pagination: {
-		 el: ".swiper-pagination",
-		 clickable: true,
-	  },
-	});
- }
 
 /* const body = document.querySelector("body");
 body.addEventListener("click", function (event) {
