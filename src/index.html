@@ -18,9 +18,9 @@
 	============================================================================-->
     <div class="wrapper">
       <div id="modalMenu" class="wrapper-saidbar">
-        <div  class="saidbar-block">
+        <div class="saidbar-block">
           <header class="saidbar-header">
-            <button id="btnCloseMenu" class="button button__close close"></button>
+            <button id="btnCloseMenu" class="button button__close"></button>
             <div class="logo-compani">
               <div class="logo-compani__click">
                 <a href="#" class="logo-compani__link">
@@ -34,64 +34,72 @@
             </div>
             <button class="button button__search"></button>
           </header>
-          <div class="navigation">
-            <nav class="menu-nav">
-              <ul class="menu-nav__list">
-                <li class="menu-nav__item">
-                  <a class="menu-nav__link" href="#">Ремонт техники</a>
+          <div class="saidbar-navigation">
+            <nav class="saidbar-menu">
+              <ul class="saidbar-menu__list">
+                <li class="saidbar-menu__item">
+                  <a class="saidbar-menu__link" href="#">Ремонт техники</a>
                 </li>
-                <li class="menu-nav__item">
-                  <a class="menu-nav__link" href="#">Услуги и сервисы</a>
+                <li class="saidbar-menu__item">
+                  <a class="saidbar-menu__link" href="#">Услуги и сервисы</a>
                 </li>
-                <li class="menu-nav__item">
-                  <a class="menu-nav__link" href="#">Корпоративным клиентам</a>
+                <li class="saidbar-menu__item">
+                  <a class="saidbar-menu__link" href="#"
+                    >Корпоративным клиентам</a
+                  >
                 </li>
-                <li class="menu-nav__item">
-                  <a class="menu-nav__link" href="#">Продавцам техники</a>
+                <li class="saidbar-menu__item">
+                  <a class="saidbar-menu__link" href="#">Продавцам техники</a>
                 </li>
-                <li class="menu-nav__item">
-                  <a class="menu-nav__link" href="#">Партнерам</a>
+                <li class="saidbar-menu__item">
+                  <a class="saidbar-menu__link" href="#">Партнерам</a>
                 </li>
-                <li class="menu-nav__item">
-                  <a class="menu-nav__link" href="#">Производителям</a>
+                <li class="saidbar-menu__item">
+                  <a class="saidbar-menu__link" href="#">Производителям</a>
                 </li>
-                <li class="menu-nav__item">
-                  <a class="menu-nav__link" href="#">Наши сервисные центры</a>
+                <li class="saidbar-menu__item">
+                  <a class="saidbar-menu__link" href="#"
+                    >Наши сервисные центры</a
+                  >
                 </li>
-                <li class="menu-nav__item">
-                  <a class="menu-nav__link" href="#">Контакты</a>
+                <li class="saidbar-menu__item">
+                  <a class="saidbar-menu__link" href="#">Контакты</a>
                 </li>
               </ul>
             </nav>
           </div>
-          <footer class="saidbar-footer">
-            <div class="contacts">
-              <button class="button button__tel"></button>
-              <button class="button button__message"></button>
-              <button class="button button__contact"></button>
-            </div>
-            <div class="email">
-              <a class="email__link" href="mailto:mail@cps.com">mail@cps.com</a>
-            </div>
-            <div class="number">
-              <a class="number__link" href="tel:8 800 890 8900"
-                >8 800 890 8900</a
-              >
-            </div>
-            <div class="language">
-              <ul class="language__list">
-                <li class="language__item">
-                  <a href="#" class="language__link">RU</a>
-                </li>
-                <li class="language__item">
-                  <a href="#" class="language__link">EN</a>
-                </li>
-                <li class="language__item">
-                  <a href="#" class="language__link">CH</a>
-                </li>
-              </ul>
-            </div>
-          </footer>
+
+          <div class="saidbar-contacts">
+            <button class="button button__tel"></button>
+            <button
+              id="btnOpenFeedback"
+              class="button button__message"
+            ></button>
+            <button class="button button__contact"></button>
+          </div>
+          <div class="saidbar-email">
+            <a class="saidbar-email__link" href="mailto:mail@cps.com"
+              >mail@cps.com</a
+            >
+          </div>
+          <div class="saidbar-number">
+            <a class="saidbar-number__link" href="tel:8 800 890 8900"
+              >8 800 890 8900</a
+            >
+          </div>
+          <div class="saidbar-language">
+            <ul class="saidbar-language__list">
+              <li class="saidbar-language__item">
+                <a href="#" class="saidbar-language__link">RU</a>
+              </li>
+              <li class="saidbar-language__item">
+                <a href="#" class="saidbar-language__link">EN</a>
+              </li>
+              <li class="saidbar-language__item">
+                <a href="#" class="saidbar-language__link">CH</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -99,7 +107,7 @@
 
       <!-- Основной контент
 	============================================================================-->
-      <div class="wrapper-content">
+      < class="wrapper-content">
         <header class="header">
           <div class="container">
             <div class="header__inner">
@@ -398,34 +406,29 @@
           <div class="container">
             <div class="swiper-container">
               <div class="swiper-wrapper">
-                <ul class="price__list">
-                  <li class="price__item">
-                    Ремонтные услуги
-                    <div class="price__repairs">Диагностика</div>
-                  </li>
-                  <li class="price__item">
-                    Цена
-                    <div class="price__repairs">Бесплатно</div>
-                  </li>
-                  <div class="price__footer">
-                    <li class="price__item">
-                      Срок
-                      <div class="price__repairs">30-120 мин</div>
-                    </li>
-                    <div class="button-order">
-                      <p class="button-order__text">ЗАКАЗАТЬ</p>
-                      <img
-                        src="img/arrow_white.svg"
-                        alt="arrow"
-                        class="button-order__arrow"
-                      />
-                    </div>
+                <div class="price__container">
+                  <div class="price__heading">Ремонтные услуги</div>
+                  <div class="price__description">Диагностика</div>
+                  <div class="price__heading">Цена</div>
+                  <div class="price__description">Бесплатно</div>
+                      <div class="price__heading">Срок</div>
+                      <div class="price__description">30-120 мин</div>
+                    
+                    <div class="button-order"></div>
+                    <p class="button-order__text">ЗАКАЗАТЬ</p>
+                    <img
+                      src="img/arrow_white.svg"
+                      alt="arrow"
+                      class="button-order__arrow"
+                    />
                   </div>
-                </ul>
+                </div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
-
+          </div>
+        <div class="price">
+          <div class="container">
             <div class="price__offer">
               Все цены указаны с учетом НДС. Стоимость ремонта указана на
               единичную услугу. Для получения коммерческого предложения на
@@ -452,8 +455,53 @@
           </div>
         </footer>
       </div>
-      <!--===========================================================================-->
-      <!--  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>-->
     </div>
+    <!--===========================================================================-->
+    <!-- Обратная связь
+	============================================================================-->
+    <div id="modalFeedback" class="wrapper-modal">
+      <div class="modal">
+        <div class="modal-container">
+          <button
+            id="btnCloseFeedback"
+            class="button button__close button__close--mod"
+          ></button>
+          <div class="modal-title">
+            <h1 class="modal-title__text">Обратная связь</h1>
+          </div>
+          <div class="modal__form">
+            <input type="text" id="name" name="name" placeholder="Имя" />
+            <input type="tel" id="tel" name="tel" placeholder="Телефон" />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Электронная почта"
+            />
+            <textarea type="text" placeholder="Сообщение"></textarea>
+          </div>
+          <div class="modal-send">
+            <div class="modal-send__text">
+              Нажимая “отправить”, вы даете согласие на <a href="#"
+                >обработку персональных данных</a
+              >
+              и соглашаетесь с нашей
+              <a href="#">политикой конфиденциальности</a>
+            </div>
+            <div class="button-order button-order--mod">
+              <p class="button-order__text">ОТПРАВИТЬ</p>
+              <img
+                src="img/arrow_white.svg"
+                alt="arrow"
+                class="button-order__arrow"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--===========================================================================-->
+    <!--  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>-->
   </body>
 </html>

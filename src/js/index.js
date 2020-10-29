@@ -1,7 +1,7 @@
 import '../scss/style.scss';
 import '../js/swiper.js';
 import '../js/modal-menu.js';
-
+import '../js/feedback-menu.js';
 
 
 /* const body = document.querySelector("body");

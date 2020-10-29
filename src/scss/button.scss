@@ -89,6 +89,17 @@
 	 @media (min-width: 1120px) {
 		display: none;
 	 }
+	 &--mod {
+		@media (min-width: 1120px) {
+			display: block;
+		 }
+		 @media (min-width: 1440px) {
+			position: absolute;
+			left:0;
+			top:0;
+			z-index: 5;
+		 }
+	 }
   }
 
   &__search {

@@ -1,0 +1,23 @@
+.modal-title {
+	&__text {
+	  font-family: "TT Lakes Bold";
+	  font-size: 24px;
+	  line-height: 32px;
+	  letter-spacing: -0.6px;
+	  color: $txtColorBlack;
+	  position: relative;
+	  &::after {
+		 content: " ";
+		 position: absolute;
+		 height: 40px;
+		 width: 4px;
+		 left: -17px;
+		 top: -4px;
+		 border-radius: 10px;
+		 background: #41f6d7;
+		 @media (min-width: 1140px) {
+			 left: -32px;
+		 }
+	  }
+	}
+ }

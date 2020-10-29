@@ -1,0 +1,11 @@
+.saidbar-number {
+	margin-bottom: 40px;
+	&__link {
+	  font-family: "TT Lakes Bold";
+	  font-size: 24px;
+	  letter-spacing: -0.6px;
+	  color: $txtColorBlack;
+	  text-decoration: none;
+	  white-space: nowrap;
+	}
+ }

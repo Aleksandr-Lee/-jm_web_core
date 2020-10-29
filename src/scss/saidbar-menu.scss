@@ -1,0 +1,38 @@
+.saidbar-menu {
+	&__list {
+	  display: flex;
+	  flex-direction: column;
+	  padding: 0;
+	  position: relative;
+	}
+ 
+	&__item {
+	  list-style: none;
+	  position: relative;
+	  margin-bottom: 32px;
+	  cursor: pointer;
+	  &:hover::before {
+		 content: " ";
+		 position: absolute;
+		 height: 32px;
+		 width: 4px;
+		 left: -24px;
+		 top: -6px;
+		 border-radius: 10px;
+		 background: #41f6d7;
+	  }
+	}
+ 
+	&__link {
+	  font-family: "TT Lakes Medium";
+	  font-size: 16px;
+	  letter-spacing: -0.2px;
+	  line-height: 24px;
+	  color: $txtColorBlack;
+	  text-decoration: none;
+	  white-space: nowrap;
+	  &:hover {
+		 color: $txtColorGrey;
+	  }
+	}
+ }
