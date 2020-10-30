@@ -11,8 +11,9 @@
 	overflow: auto;
 	//position: fixed;
 	//z-index: 5;
-	left: 0;
-	top: 0;
+	//left: 0;
+	//top: 0;
+	transform: translate(0, 0);
 	background-color: #ffffff;
 	@media (min-width: 1120px) {
 	  max-width: 306px;

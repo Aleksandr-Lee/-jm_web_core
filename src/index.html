@@ -72,7 +72,7 @@
           <div class="saidbar-contacts">
             <button class="button button__tel"></button>
             <button
-              id="btnOpenFeedback"
+				id="btnOpenFeedback"
               class="button button__message"
             ></button>
             <button class="button button__contact"></button>
@@ -107,7 +107,7 @@
 
       <!-- Основной контент
 	============================================================================-->
-      < class="wrapper-content">
+      <div class="wrapper-content">
         <header class="header">
           <div class="container">
             <div class="header__inner">
@@ -127,7 +127,7 @@
               </div>
               <div class="header-inner__connection">
                 <button class="button button__tel button__tel--mod"></button>
-                <button
+                <button id="btnOpenFeedback"
                   class="button button__message button__message--mod"
                 ></button>
                 <button
@@ -405,16 +405,15 @@
         <div class="price">
           <div class="container">
             <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="price__container">
+              <ul class="price__list swiper-wrapper">
+                <li class="price__item swiper-slide">
                   <div class="price__heading">Ремонтные услуги</div>
                   <div class="price__description">Диагностика</div>
                   <div class="price__heading">Цена</div>
                   <div class="price__description">Бесплатно</div>
-                      <div class="price__heading">Срок</div>
-                      <div class="price__description">30-120 мин</div>
-                    
-                    <div class="button-order"></div>
+                  <div class="price__heading">Срок</div>
+                  <div class="price__description">30 мин</div>
+                  <div class="button-order">
                     <p class="button-order__text">ЗАКАЗАТЬ</p>
                     <img
                       src="img/arrow_white.svg"
@@ -422,11 +421,36 @@
                       class="button-order__arrow"
                     />
                   </div>
-                </div>
-              </div>
+                </li>
+                <li class="price__item swiper-slide">
+                  <div class="price__heading">Ремонтные услуги</div>
+                  <div class="price__description">
+                    Тестирование с выдачей технического заключения
+                  </div>
+                  <div class="price__heading">Цена</div>
+                  <div class="price__description">Бесплатно</div>
+
+                  <div class="price__heading">Срок</div>
+                  <div class="adc">
+							<div class="a">
+						  <div class="price__description">30 мин</div>
+						</div>
+                 
+                  <div class="button-order">
+                    <p class="button-order__text">ЗАКАЗАТЬ</p>
+                    <img
+                      src="img/arrow_white.svg"
+                      alt="arrow"
+                      class="button-order__arrow"
+                    />
+						</div>
+					</div>
+                </li>
+              </ul>
               <div class="swiper-pagination"></div>
             </div>
           </div>
+        </div>
         <div class="price">
           <div class="container">
             <div class="price__offer">
