@@ -1,8 +1,15 @@
 .swiper-container {
 	padding-bottom: 25px;
+	&:last-child {
+		padding-bottom: 45px;
+	}
 	@media (min-width: 768px) {
 	  padding-bottom: 0;
+	  &:last-child {
+		padding-bottom: 0;
 	}
+	}
+	
  }
 
  .swiper-pagination {
@@ -17,4 +24,8 @@
 	  }
 	}
  }
- 
+ .swiper-wrapper {
+	@media (min-width: 768px) {
+		//display: block;
+	 }
+}

@@ -70,7 +70,7 @@ body {
   width: 100%;
   // overflow: auto;
   background-color: rgba(255, 255, 255, 0.7);
-  @media (min-width: 1120px) {
+  @media (min-width: 1440px) {
     max-width: 306px;
     min-width: 306px;
     display: block;
@@ -89,84 +89,134 @@ body {
   // position: relative;
 }
 
-.price {
-	background: $bgColor;
-	&__list {
-	padding-left: 0;
-	@media (min-width: 768px) {
-		display: flex;
-		flex-direction: column;
-		
-		
-	}
-	}
-	&__item {
-		list-style: none;
-		box-sizing: border-box;
-		max-width: 260px;
-		height: 200px;
-		background: #ffffff;
-		border-radius: 6px;
-		padding: 16px;
-		@media (min-width: 768px) {
-			max-width: none;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-		}
-	}
-
-	.adc {
-		display: flex;
-		justify-content: space-between;	
-		
-	}
-
-	&__heading {
-		font-family: "TT Lakes Medium";
-		font-size: 14px;
-		line-height: 16px;
-		color: $txtColorGrey;
-		mix-blend-mode: normal;
-		opacity: 0.72;
-		list-style: none;
-	
-		@media (min-width: 768px) {
-			display: none;
-			
-		}
-	}
-
-	&__description {
-		margin-bottom: 16px;
-		font-family: "TT Lakes Regular";
-		font-size: 14px;
-		line-height: 18px;
-		letter-spacing: 0.2px;
-		color: $txtColorBlack;
-	}
-}
-
-.button-order {
-
-	&__text {
-	}
-
-	&__arrow {
-	}
-}
-
-
-.price {
+.table {
   background: $bgColor;
+  &__header-block {
+    @media (min-width: 768px) {
+      display: flex;
+      margin-bottom: 16px;
+      padding: 31px 16px 0 16px;
+    }
+  }
 
+  &__header {
+    font-family: "TT Lakes Medium";
+    font-size: 14px;
+    line-height: 16px;
+    color: $txtColorGrey;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+    &--mod {
+      display: block;
+      margin-bottom: 4px;
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+  &__services {
+    width: 100%;
+    @media (min-width: 768px) {
+      width: 55%;
+    }
+  }
+
+  &__price {
+    width: 100%;
+    @media (min-width: 768px) {
+      width: 15%;
+    }
+  }
+
+  &__deadline {
+    width: 100%;
+    @media (min-width: 768px) {
+      width: 15%;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    @media (min-width: 768px) {
+      width: 15%;
+    }
+  }
+
+  &__wrapper {
+    @media (min-width: 768px) {
+      background: #ffffff;
+      border-radius: 6px;
+      display: block;
+      margin-bottom: 24px;
+    }
+    @media (min-width: 1120px) {
+      margin-bottom: 32px;
+    }
+  }
+  &__list {
+    box-sizing: border-box;
+    max-width: 260px;
+    height: 200px;
+    background: #ffffff;
+    cursor: pointer;
+    padding: 16px;
+    margin-top: 16px;
+    position: relative;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: none;
+      max-width: 100%;
+      background: none;
+      padding: 0 16px 0 16px;
+      margin-top: 0;
+      height: auto;
+    }
+  }
+
+  &__item {
+    font-family: "TT Lakes Regular";
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: $txtColorBlack;
+    margin: 0 0 16px 0;
+
+    @media (min-width: 768px) {
+      margin: 23px 0 23px 0;
+    }
+  }
   &__footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    @media (min-width: 768px) {
+      //display: block;
+    }
   }
 
-  &__offer {
+  &__footer-deadline {
+  }
+  &__border {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      width: 97%;
+      height: 1px;
+      background: #eaeaea;
+      margin: 0 auto;
+    }
+  }
+}
+
+.sentence {
+  background: $bgColor;
+
+  &__text {
     max-width: 421px;
     font-family: "TT Lakes Regular";
     font-size: 14px;
@@ -176,7 +226,7 @@ body {
     margin-bottom: 16px;
   }
 
-  &__getoffer {
+  &__get {
     display: block;
     font-family: "TT Lakes Medium";
     font-size: 16px;
@@ -184,11 +234,10 @@ body {
     letter-spacing: -0.2px;
     color: $txtColorBlack;
     text-decoration: none;
-    cursor: pointer;
     position: relative;
-    padding-bottom: 40px;
+	 margin-bottom: 40px;
     &:after {
-      content: url("../img/arrow_pink.svg");
+     content: url("../img/arrow_pink.svg");
       position: absolute;
       top: 25px;
       right: 170px;
@@ -210,13 +259,19 @@ body {
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
-  align-self: flex-end;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  @media (min-width: 768px) {
+    position: static;
+  }
 
   &--mod {
     width: 136px;
     height: 32px;
     position: absolute;
     right: 0;
+    top: 83px;
   }
 
   &__text {
@@ -235,6 +290,7 @@ body {
   border-top: 1px solid #d9fff5;
   background: $bgColor;
   &__content {
+    margin: 0;
     padding: 0;
     @media (min-width: 768px) {
       display: flex;
