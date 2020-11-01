@@ -11,6 +11,10 @@
 	background-position: center;
 	cursor: pointer;
 	position: relative;
+	&:hover {
+		filter: grayscale(100%);
+		transition: 0.5s;
+	 }
  
 	&--flex {
 	  align-self: flex-end;

@@ -70,9 +70,9 @@
           </div>
 
           <div class="saidbar-contacts">
-            <button class="button button__tel"></button>
+            <button id="btnOpenCall" class="button button__tel"></button>
             <button
-              id=""
+              id="btnOpenFeedback"
               class="button button__message"
             ></button>
             <button class="button button__contact"></button>
@@ -564,20 +564,20 @@
         </footer>
     
 	 </div>
-	</div>
+	
 	
     <!--===========================================================================-->
     <!-- Обратная связь
 	============================================================================-->
     <div id="modalFeedback" class="wrapper-modal">
       <div class="modal">
-        <div class="modal-container">
+        <div class="modal__container">
           <button
             id="btnCloseFeedback"
             class="button button__close button__close--mod"
-          ></button>
-          <div class="modal-title">
-            <h1 class="modal-title__text">Обратная связь</h1>
+			 ></button>
+          <div class="modal__title">
+            <h1 class="modal__title-text">Обратная связь</h1>
           </div>
           <div class="modal__form">
             <input type="text" id="name" name="name" placeholder="Имя" />
@@ -590,8 +590,8 @@
             />
             <textarea type="text" placeholder="Сообщение"></textarea>
           </div>
-          <div class="modal-send">
-            <div class="modal-send__text">
+          <div class="modal__send">
+            <div class="modal__send-text">
               Нажимая “отправить”, вы даете согласие на <a href="#"
                 >обработку персональных данных</a
               >
@@ -609,9 +609,44 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <!--===========================================================================-->
-    <!--  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>-->
+	 </div>
+	  <!--===========================================================================-->
+	   <!-- Заказать звонок
+	============================================================================-->
+	 <div id="modalCall" class="wrapper-modal">
+      <div class="modal">
+        <div class="modal__container">
+          <button
+            id="btnCloseCall"
+            class="button button__close button__close--mod"
+			 ></button>
+          <div class="modal__title">
+            <h1 class="modal__title-text">Заказать звонок</h1>
+          </div>
+          <div class="modal__form">
+            <input type="tel" id="telefon" name="telefon" placeholder="Телефон" />
+          </div>
+          <div class="modal__send">
+            <div class="modal__send-text">
+              Нажимая “отправить”, вы даете согласие на <a href="#"
+                >обработку персональных данных</a
+              >
+              и соглашаетесь с нашей
+              <a href="#">политикой конфиденциальности</a>
+            </div>
+            <div class="button-order button-order--mod">
+              <p class="button-order__text">ОТПРАВИТЬ</p>
+              <img
+                src="img/arrow_white.svg"
+                alt="arrow"
+                class="button-order__arrow"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+	 </div>
+	  <!--===========================================================================-->
+	</div>
   </body>
 </html>

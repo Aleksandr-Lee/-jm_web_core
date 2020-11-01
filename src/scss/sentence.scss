@@ -1,0 +1,39 @@
+.sentence {
+	background: $bgColor;
+ 
+	&__text {
+	  max-width: 421px;
+	  font-family: "TT Lakes Regular";
+	  font-size: 14px;
+	  line-height: 20px;
+	  letter-spacing: 0.2px;
+	  color: $txtColorBlack;
+	  margin-bottom: 16px;
+	}
+ 
+	&__get {
+	  display: block;
+	  max-width: 290px;
+	  font-family: "TT Lakes Medium";
+	  font-size: 16px;
+	  line-height: 24px;
+	  letter-spacing: -0.2px;
+	  color: $txtColorBlack;
+	  text-decoration: none;
+	  position: relative;
+	  padding-bottom: 40px;
+	  @media (min-width: 350px) {
+		max-width: 310px;
+	 }
+	  &:after {
+		 content: url("../img/arrow_pink.svg");
+		 position: absolute;
+		 top: 25px;
+		 right: 170px;
+		 @media (min-width: 350px) {
+			top: 1px;
+			right: 0;
+		 }
+	  }
+	}
+ }
