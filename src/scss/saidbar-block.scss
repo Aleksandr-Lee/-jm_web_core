@@ -15,9 +15,12 @@
 	//top: 0;
 	//transform: translate(0, 0);
 	background-color: #ffffff;
-	@media (min-width: 1440px) {
+	@media (min-width: 1120px) {
 		min-width: 306px;
 		max-width: 306px;
-	  box-shadow: none;
-		}
+		box-shadow: none;
+		height: auto;
+		//display: flex;
+
+	}
  }

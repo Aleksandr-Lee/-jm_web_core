@@ -2,6 +2,7 @@ const modalMenu = document.getElementById('modalMenu');
 const openMenu = document.getElementById('btnOpenMenu');
 const closeMenu = document.getElementById('btnCloseMenu');
 const body = document.querySelector('body');
+
 openMenu.onclick = function() {
 	modalMenu.style.display = 'block';
 	body.style.overflow = 'hidden';
