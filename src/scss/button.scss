@@ -2,7 +2,7 @@
   display: block;
   height: 40px;
   width: 40px;
-  background-color: #ff3e79;
+  background-color: $pink;
   border: none;
   border-radius: 20px;
   background-repeat: no-repeat;
@@ -95,9 +95,8 @@
 		 }
 		 @media (min-width: 1440px) {
 			position: absolute;
-			left:0;
-			top:0;
-			z-index: 1;
+			left:-78px;
+			top:51px;
 		 }
 	 }
   }

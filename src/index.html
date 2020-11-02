@@ -83,7 +83,7 @@
             >
           </div>
           <div class="saidbar-number">
-            <a class="saidbar-number__link" href="tel:8 800 890 8900"
+            <a class="saidbar-number__link" href="tel:88008908900"
               >8 800 890 8900</a
             >
           </div>
@@ -147,10 +147,10 @@
                 <h1 class="title-header__text">Услуги и сервисы</h1>
               </div>
               <div class="services">
-                <label for="" class="services__text">Оставить заявку</label>
-                <button class="button button__service"></button>
-                <label for="" class="services__text">Статус ремонта</label>
-                <button class="button button__status"></button>
+                <label for="request" class="services__text">Оставить заявку</label>
+                <button id="request" class="button button__service"></button>
+                <label for="status" class="services__text">Статус ремонта</label>
+                <button id="status" class="button button__status"></button>
               </div>
             </div>
             <div class="menu">
@@ -193,10 +193,10 @@
 
                   <div class="show-more">
                     <button
-                      id="read"
+                      id="read-more"
                       class="button-show button-show--down"
                     ></button>
-                    <label for="read" class="button-show__text"
+                    <label for="read-more" class="button-show__text"
                       >Читать дальше</label
                     >
                   </div>
@@ -300,7 +300,7 @@
             </div>
             <div class="show-more show-more--hidden">
               <button
-                data-container="brands"
+				  	data-container="brands"
                 id="read2"
                 class="button-show button-show--down"
               ></button>
@@ -386,11 +386,11 @@
             </div>
             <div class="show-more show-more--hidden">
               <button
-                data-container="brands"
-                id="read2"
+                data-container="brand"
+                id="read"
                 class="button-show button-show--down"
               ></button>
-              <label for="read2" class="button-show__text">Показать все</label>
+              <label for="read" class="button-show__text">Показать все</label>
             </div>
           </div>
         </div>
@@ -588,7 +588,7 @@
               name="email"
               placeholder="Электронная почта"
             />
-            <textarea type="text" placeholder="Сообщение"></textarea>
+            <textarea name="message" placeholder="Сообщение"></textarea>
           </div>
           <div class="modal__send">
             <div class="modal__send-text">
