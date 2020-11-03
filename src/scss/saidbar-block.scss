@@ -2,7 +2,6 @@
 	padding: 0 24px;
 	max-width: 360px;
 	min-width: 320px;
-	width: 100%;
 	box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02),
 	  16px 0 52px rgba(14, 24, 80, 0.2);
 	height: 100vh;
@@ -17,7 +16,7 @@
 	background-color: #ffffff;
 	animation-name:animate;
  	animation-duration: 0.9s;
-	@media (min-width: 1120px) {
+	@media (min-width: 1440px) {
 		min-width: 306px;
 		max-width: 306px;
 		box-shadow: none;

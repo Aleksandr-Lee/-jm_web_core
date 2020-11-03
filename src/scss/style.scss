@@ -61,6 +61,7 @@ body {
 	to {top:0; opacity:1}
 }
 
+
 .wrapper {
   position: relative;
   @media (min-width: 1120px) {
@@ -76,7 +77,9 @@ body {
   width: 100%;
   overflow: auto;
   background-color: rgba(255, 255, 255, 0.96);
-  @media (min-width: 1120px) {
+  animation-name:animate;
+  animation-duration: 0.5s;
+  @media (min-width: 1440px) {
     max-width: 306px;
     min-width: 306px;
     display: block;

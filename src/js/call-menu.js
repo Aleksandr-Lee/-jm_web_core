@@ -2,6 +2,7 @@
  const closeCall = document.querySelectorAll('.button__close')
  const openCall = document.querySelectorAll('.button__tel')
  const body = document.querySelector('body');
+ 
  for (let i = 0; i < openCall.length; i++) {
 	openCall[i].addEventListener("click", function (event) { 
 		const btnOpen = event.target;
@@ -27,6 +28,15 @@ window.addEventListener("click", function (event) {
 	}
 });
 
+
+
+/*body.addEventListener("click", function (event) { 
+	const btnOpen = event.target;
+		if (btnOpen == openCall) {
+		modalCall.style.display = 'block';
+		body.style.overflow = 'hidden';
+	}
+});*/
 
 
 /*const openCall = document.querySelector('.button__tel')

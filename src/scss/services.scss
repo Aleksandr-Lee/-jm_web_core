@@ -5,12 +5,12 @@
 	@media (min-width: 768px) {
 	  display: none;
 	}
-	@media (min-width: 1120px) {
+	@media (min-width: 1440px) {
 	  display: flex;
 	  align-items: center;
 	}
 	&__text {
-	  @media (min-width: 1120px) {
+	  @media (min-width: 1440px) {
 		 font-family: "TT Lakes Medium";
 		 font-size: 16px;
 		 line-height: 24px;
