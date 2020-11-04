@@ -1,15 +1,24 @@
 .button-show {
   height: 24px;
-  width: 24px;
+  width: 135px;
   border: none;
   background: $bgColor;
+  background-image: url("../img/down.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   cursor: pointer;
+  font-family: "TT Lakes Medium";
+  font-size: 16px;
+  line-height: 24px;
+  color: $txtColorBlack;
+  margin: 0 0 16px 0;
+  outline: none;
   &__text {
-    font-family: "TT Lakes Medium";
+	 font-family: "TT Lakes Medium";
+	 font-size: 16px;
+	 line-height: 24px;
     color: $txtColorBlack;
-    margin: 0 0 16px 0;
+    margin: 0 0 15px -127px;
     cursor: pointer;
   }
   &--down {
@@ -18,6 +27,6 @@
   }
   &--up {
     background-image: url("../img/up.svg");
-    margin: 0 8px 16px 0;
+   margin: 0 8px 16px 0;
   }
 }

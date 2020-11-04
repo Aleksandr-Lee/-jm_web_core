@@ -17,10 +17,3 @@ window.addEventListener("click", function (event) {
     body.style.overflow = "visible";
   }
 });
-
-/*window.onclick = function(event) {
-	if(event.target == modalMenu) {
-		modalMenu.style.display = 'none';
-		body.style.overflow = 'visible';
-	}
-};*/
