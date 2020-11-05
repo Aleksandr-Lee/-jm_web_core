@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  outline: none;
   &:hover {
     filter: grayscale(100%);
     transition: 0.5s;
