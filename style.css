@@ -593,7 +593,8 @@ button.swiper-pagination-bullet {
   border-radius: 20px;
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
   .button:hover {
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
