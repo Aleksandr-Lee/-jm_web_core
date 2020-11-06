@@ -86,9 +86,8 @@ body {
   }
 }
 
-
 .wrapper-modal {
-  position: absolute;
+  position: fixed;
   display: none;
   z-index: 2;
   left: 0;
