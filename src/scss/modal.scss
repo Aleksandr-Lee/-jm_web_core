@@ -55,17 +55,58 @@
     display: flex;
     flex-direction: column;
   }
-
-  &__send {
-    position: relative;
+  &__input {
+	height: 48px;
+	background: #ffffff;
+	border: 1px solid #eaeaea;
+	border-radius: 8px;
+	margin-bottom: 16px;
+	&[type] {
+	  padding-left: 16px;
+	  font-family: "TT Lakes Medium";
+	  font-size: 16px;
+	  line-height: 24px;
+	}
+	&::placeholder {
+	  font-family: "TT Lakes Medium";
+	  font-size: 16px;
+	  line-height: 24px;
+	  letter-spacing: -0.2px;
+	  color: #b5b6bc;
+	}
   }
+  &__textarea {
+	height: 118px;
+	background: #ffffff;
+	border: 1px solid #eaeaea;
+	border-radius: 8px;
+	margin-bottom: 16px;
+	&[name] {
+	  font-family: "TT Lakes Medium";
+	  font-size: 16px;
+	  line-height: 24px;
+	  padding-left: 16px;
+	  padding-top: 12px;
+	}
+	&::placeholder {
+	  font-family: "TT Lakes Medium";
+	  font-size: 16px;
+	  line-height: 24px;
+	  letter-spacing: -0.2px;
+	  color: #b5b6bc;
+	}
+  }
+  &__send {
+	position: relative;
+	  }
 
   &__send-text {
     font-family: "TT Lakes Medium";
     font-size: 14px;
     line-height: 16px;
     color: $txtColorGrey;
-    margin-bottom: 16px;
+	 margin-bottom: 16px;
+	
     a {
       text-decoration: none;
       color: $pink;

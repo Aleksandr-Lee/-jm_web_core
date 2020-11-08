@@ -2,24 +2,21 @@ const modalFeedback = document.getElementById("modalFeedback");
 const closeFeedback = document.querySelectorAll(".button__close");
 const openFeedback = document.querySelectorAll(".button__message");
 const body = document.querySelector("body");
-for (let i = 0; i < openFeedback.length; i++) {
-  openFeedback[i].addEventListener("click", function (event) {
-    const btnOpen = event.target;
-    if (btnOpen == openFeedback[i]) {
-      modalFeedback.style.display = "block";
-      body.style.overflow = "hidden";
-    }
-  });
-}
-for (let i = 0; i < closeFeedback.length; i++) {
-  closeFeedback[i].addEventListener("click", function (event) {
-    const btnClose = event.target;
-    if (btnClose == closeFeedback[i]) {
-      modalFeedback.style.display = "none";
-      body.style.overflow = "visible";
-    }
-  });
-}
+
+function toggleModalFeedback (modal, display, overflow) {
+	for (let i = 0; i < modal.length; i++) {
+		modal[i].addEventListener("click", function (event) { 
+			const btnClose = event.target;
+			if (btnClose == modal[i]) {
+				modalFeedback.style.display = display;
+				body.style.overflow = overflow;
+			}
+	});
+	}
+} 
+toggleModalFeedback(openFeedback, 'block', 'hidden' );
+toggleModalFeedback(closeFeedback, 'none', 'visible' );
+
 window.addEventListener("click", function (event) {
   if (event.target == modalFeedback) {
     modalFeedback.style.display = "none";

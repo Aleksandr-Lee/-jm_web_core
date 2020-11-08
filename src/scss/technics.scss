@@ -1,12 +1,13 @@
 .technics {
   background: $bgColor;
   &__list {
-    padding-left: 0;
+	 padding-left: 0;
     @media (min-width: 768px) {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      padding-left: 0;
+		padding-left: 0;
+		position: relative;
     }
     @media (min-width: 768px) {
       &::after {
@@ -26,14 +27,18 @@
 
   &__item {
     box-sizing: border-box;
-    max-width: 240px;
-    min-height: 160px;
+	 max-width: 240px;
     border: 1px solid #eaeaea;
     border-radius: 6px;
     list-style: none;
     background: #ffffff;
-    padding: 16px 16px;
-    cursor: pointer;
+	 padding: 0 16px 0 16px;
+	 cursor: pointer;
+	 
+	 &--mod {
+		padding: 16px 16px 16px 16px;
+		
+	 }
     @media (min-width: 768px) {
       max-width: 224px;
       margin-bottom: 16px;

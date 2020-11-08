@@ -2,18 +2,29 @@ const modalMenu = document.getElementById("modalMenu");
 const openMenu = document.getElementById("btnOpenMenu");
 const closeMenu = document.getElementById("btnCloseMenu");
 const body = document.querySelector("body");
-const wrapperModal = document.querySelector(".wrapper-modal");
-openMenu.onclick = function () {
-  modalMenu.style.display = "block";
-  body.style.overflow = "hidden";
-};
-closeMenu.onclick = function () {
-  modalMenu.style.display = "none";
-  body.style.overflow = "visible";
-};
+//const hidden = document.querySelector(".hidden");
+//const wrapperModal = document.querySelector(".wrapper-modal");
+
+function menuModal(button, display, overflow) {
+	button.addEventListener("click", function () {
+		modalMenu.style.display = display;
+		body.style.overflow = overflow;
+	});
+}
+menuModal(openMenu, "block", "hidden");
+menuModal(closeMenu, "none", "visible");
+
 window.addEventListener("click", function (event) {
-  if (event.target == modalMenu) {
-    modalMenu.style.display = "none";
-    body.style.overflow = "visible";
-  }
-});
+	if (event.target == modalMenu) {
+	  modalMenu.style.display = "none";
+	  body.style.overflow = "visible";
+	}
+ });
+ window.addEventListener('resize', function(){
+	if (window.innerWidth >= 1440) {
+		modalMenu.style.display = "block";
+		body.style.overflow = "visible";
+	} else {
+		modalMenu.style.display = "none";
+	}
+ });

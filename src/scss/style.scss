@@ -3,9 +3,8 @@
 @import "fonts.scss";
 @import "header.scss";
 @import "container.scss";
-@import "header-inner.scss";
 @import "button.scss";
-@import "logo-compani.scss";
+@import "logo-company.scss";
 @import "section.scss";
 @import "title-header.scss";
 @import "services.scss";
@@ -16,7 +15,6 @@
 @import "button-show.scss";
 @import "picture.scss";
 @import "title-section.scss";
-@import "brand.scss";
 @import "swiper.scss";
 @import "limit-height.scss";
 @import "logo-brand.scss";
@@ -36,8 +34,6 @@
 @import "saidbar-number.scss";
 @import "saidbar-language.scss";
 @import "modal.scss";
-@import "input.scss";
-@import "textarea.scss";
 
 html {
   margin: 0 auto;
@@ -55,16 +51,24 @@ body {
   margin: 0;
 }
 @keyframes animate {
-	from {right:-350px; opacity: 0;}
-	to {top:0; opacity:1}
+  from {
+    right: -350px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
-
 
 .wrapper {
   position: relative;
   @media (min-width: 1440px) {
     display: flex;
   }
+}
+.hidden {
+  display: block;
 }
 .wrapper-saidbar {
   display: none;
@@ -73,16 +77,17 @@ body {
   left: 0;
   top: 0;
   width: 100%;
+  height: 100vh;
   overflow: auto;
   background-color: rgba(255, 255, 255, 0.96);
-  animation-name:animate;
+  animation-name: animate;
   animation-duration: 0.5s;
   @media (min-width: 1440px) {
     max-width: 306px;
     min-width: 306px;
     display: block;
-	 position: static;
-	 
+    position: static;
+    overflow: visible;
   }
 }
 
@@ -96,6 +101,6 @@ body {
   height: 100vh;
   overflow: auto;
   background-color: rgba(255, 255, 255, 0.96);
-  animation-name:animate;
+  animation-name: animate;
   animation-duration: 0.5s;
 }

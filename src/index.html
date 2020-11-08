@@ -21,11 +21,11 @@
         <div class="saidbar-block">
           <header class="saidbar-header">
             <button id="btnCloseMenu" class="button button__close"></button>
-            <div class="logo-compani">
-              <div class="logo-compani__click">
-                <a href="#" class="logo-compani__link">
+            <div class="logo-company">
+              <div class="logo-company__click">
+                <a href="#" class="logo-company__link">
                   <img
-                    class="logo-compani__image"
+                    class="logo-company__image"
                     src="img/logo.svg"
                     alt="company `s logo"
                   />
@@ -106,16 +106,15 @@
       <!-- Основной контент
 	============================================================================-->
       <div class="wrapper-content">
-        <header class="header">
-          <div class="container">
+        <header class="header container">
             <div class="header__inner">
-              <div class="header-inner__menu-logo">
+              <div class="header__inner-wrapper">
                 <button id="btnOpenMenu" class="button button__nav"></button>
-                <div class="logo-compani">
-                  <div class="logo-compani__click logo-compani__click--mod">
-                    <a href="#" class="logo-compani__link">
+                <div class="logo-company">
+                  <div class="logo-company__click logo-company__click--mod">
+                    <a href="#" class="logo-company__link">
                       <img
-                        class="logo-compani__image"
+                        class="logo-company__image"
                         src="img/logo.svg"
                         alt="company `s logo"
                       />
@@ -123,7 +122,7 @@
                   </div>
                 </div>
               </div>
-              <div class="header-inner__connection">
+              <div class="header__inner-wrapper">
                 <button class="button button__tel button__tel--mod"></button>
                 <button
                   id="btnOpenFeedback"
@@ -136,10 +135,9 @@
                 <button class="button button__status"></button>
               </div>
             </div>
-          </div>
+          
         </header>
-        <section class="section">
-          <div class="container">
+        <section class="section container">
             <div class="section__header">
               <div class="title-header">
                 <h1 class="title-header__text">Услуги и сервисы</h1>
@@ -213,86 +211,82 @@
                 </div>
               </div>
             </div>
-          </div>
         </section>
-        <div class="title-section">
+        <div class="title-section container">
           <div class="title-section__content">
-            <div class="container">
               <h2 class="title-section__text">
                 Ремонт техники различных брендов
               </h2>
-            </div>
           </div>
         </div>
-        <div class="brand">
-          <div class="container">
+        <div class="technics container">
             <div
               class="swiper-container limit-height"
-              data-container-id="brands"
+              data-container-slider="brands"
               data-state="close"
             >
-              <ul class="brand__list swiper-wrapper">
-                <li class="brand__item swiper-slide">
+              <ul class="technics__list swiper-wrapper">
+                <li class="technics__item swiper-slide">
                   <a href="#" class="logo-brand">
                     <img src="img/Lenovo.svg" alt="Lenovo" />
                     <div class="button-click"></div>
                   </a>
                 </li>
-                <li class="brand__item swiper-slide">
+                <li class="technics__item swiper-slide">
                   <a href="#" class="logo-brand">
                     <img src="img/Samsung.svg" alt="Samsung" />
                     <div class="button-click"></div>
                   </a>
                 </li>
-                <li class="brand__item swiper-slide">
+                <li class="technics__item swiper-slide">
                   <a href="#" class="logo-brand">
                     <img src="img/Apple.svg" alt="Apple" />
                     <div class="button-click"></div>
                   </a>
                 </li>
-                <li class="brand__item swiper-slide">
+                <li class="technics__item swiper-slide">
                   <a href="#" class="logo-brand">
                     <img src="img/ViewSonic.svg" alt="ViewSonic" />
                     <div class="button-click"></div>
                   </a>
                 </li>
-                <li class="brand__item swiper-slide">
+                <li class="technics__item swiper-slide">
                   <a href="#" class="logo-brand">
                     <img src="img/Bosch.svg" alt="Bosch" />
                     <div class="button-click"></div>
                   </a>
                 </li>
-                <li class="brand__item swiper-slide">
+                <li class="technics__item swiper-slide">
                   <a href="#" class="logo-brand">
                     <img src="img/HP.svg" alt="HP" />
                     <div class="button-click"></div>
                   </a>
                 </li>
-                <li class="brand__item swiper-slide">
+                <li class="technics__item swiper-slide">
                   <a href="#" class="logo-brand">
                     <img src="img/Acer.svg" alt="Acer" />
                     <div class="button-click"></div>
                   </a>
                 </li>
-                <li class="brand__item swiper-slide">
+                <li class="technics__item swiper-slide">
                   <a href="#" class="logo-brand">
                     <img src="img/Sony.svg" alt="Sony" />
                     <div class="button-click"></div>
                   </a>
                 </li>
-                <li class="brand__item swiper-slide">
+                <li class="technics__item swiper-slide">
                   <a href="#" class="logo-brand">
                     <img src="img/Lenovo.svg" alt="Lenovo" />
                     <div class="button-click"></div>
                   </a>
                 </li>
-                <li class="brand__item swiper-slide">
+                <li class="technics__item swiper-slide">
                   <a href="#" class="logo-brand">
                     <img src="img/Samsung.svg" alt="Samsung" />
                     <div class="button-click"></div>
                   </a>
                 </li>
-                <li class="brand__item swiper-slide">
+                <li class="technics__item swiper-slide">
                   <a href="#" class="logo-brand">
                     <img src="img/Apple.svg" alt="Apple" />
                     <div class="button-click"></div>
@@ -304,82 +298,78 @@
             <div class="show-more show-more--hidden">
 					<button
 					data-container="brands"
-					id="read"
 					class="button-show button-show--down"
 				 >
 					Показать всё
 				 </button>
             </div>
-          </div>
+         
         </div>
 
-        <div class="title-section">
+        <div class="title-section container">
           <div class="title-section__content">
-            <div class="container">
               <h2 class="title-section__text">
                 Ремонт различных видов техники
               </h2>
-            </div>
           </div>
         </div>
 
-        <div class="technics">
-          <div class="container">
+        <div class="technics container">
             <div
               class="swiper-container limit-height"
-              data-container-id="technics"
+              data-container-slider="technics"
               data-state="close"
             >
               <ul class="technics__list swiper-wrapper">
-                <li class="technics__item swiper-slide">
+                <li class="technics__item technics__item--mod swiper-slide">
                   <a href="#" class="technic-click">
                     <p>Ремонт ноутбуков</p>
                     <div class="button-click button-click--flex"></div>
                   </a>
                 </li>
-                <li class="technics__item swiper-slide">
+                <li class="technics__item technics__item--mod swiper-slide">
                   <a href="#" class="technic-click">
                     <p>Ремонт планшетов</p>
                     <div class="button-click button-click--flex"></div>
                   </a>
                 </li>
-                <li class="technics__item swiper-slide">
+                <li class="technics__item technics__item--mod swiper-slide">
                   <a href="#" class="technic-click">
                     <p>Ремонт ПК</p>
                     <div class="button-click button-click--flex"></div>
                   </a>
                 </li>
-                <li class="technics__item swiper-slide">
+                <li class="technics__item technics__item--mod swiper-slide">
                   <a href="#" class="technic-click">
                     <p>Ремонт мониторов</p>
                     <div class="button-click button-click--flex"></div>
                   </a>
                 </li>
-                <li class="technics__item swiper-slide">
+                <li class="technics__item technics__item--mod swiper-slide">
                   <a href="#" class="technic-click">
                     <p>Ремонт телефонов</p>
                     <div class="button-click button-click--flex"></div>
                   </a>
                 </li>
-                <li class="technics__item swiper-slide">
+                <li class="technics__item technics__item--mod swiper-slide">
                   <a href="#" class="technic-click">
                     <p>Ремонт принтеров</p>
                     <div class="button-click button-click--flex"></div>
                   </a>
                 </li>
-                <li class="technics__item swiper-slide">
+                <li class="technics__item technics__item--mod swiper-slide">
                   <a href="#" class="technic-click">
                     <p>Ремонт сканеров</p>
                     <div class="button-click button-click--flex"></div>
                   </a>
                 </li>
-                <li class="technics__item swiper-slide">
+                <li class="technics__item technics__item--mod swiper-slide">
                   <a href="#" class="technic-click">
                     <p>Ремонт МФУ</p>
                     <div class="button-click button-click--flex"></div>
                   </a>
                 </li>
-                <li class="technics__item swiper-slide">
+                <li class="technics__item technics__item--mod swiper-slide">
                   <a href="#" class="technic-click">
                     <p>Ремонт телевизоров</p>
                     <div class="button-click button-click--flex"></div>
@@ -397,18 +387,15 @@
 					Показать всё
 				 </button>
             </div>
-          </div>
+          
         </div>
 
-        <div class="title-section">
+        <div class="title-section container">
           <div class="title-section__content">
-            <div class="container">
               <h2 class="title-section__text">Цены на услуги</h2>
-            </div>
           </div>
         </div>
-        <div class="table">
-          <div class="container">
+        <div class="table container">
             <div class="table__header-block">
               <div class="table__header table__services">Ремонтные услуги</div>
               <div class="table__header table__price">Цена</div>
@@ -539,10 +526,9 @@
 				</div>
 				<div class="swiper-pagination"></div>
           </div>
-		  </div>
+		  
 		</div>
-        <div class="sentence">
-          <div class="container">
+        <div class="sentence container">
             <div class="sentence__text">
               Все цены указаны с учетом НДС. Стоимость ремонта указана на
               единичную услугу. Для получения коммерческого предложения на
@@ -550,10 +536,8 @@
             </div>
             <a href="#" class="sentence__get"
 				  >Получить коммерческое предложение</a>
-          </div>
         </div>
-        <footer class="footer">
-          <div class="container">
+        <footer class="footer container">
             <ul class="footer__content">
               <li class="footer__text">
                 © 2019 CPS <br />
@@ -565,7 +549,6 @@
                 публичной офертой
               </li>
             </ul>
-          </div>
         </footer>    
 	 </div>
     <!--===========================================================================-->
@@ -582,15 +565,15 @@
             <h1 class="modal__title-text">Обратная связь</h1>
           </div>
           <div class="modal__form">
-            <input type="text" id="name" name="name" placeholder="Имя" />
-            <input type="tel" id="tel" name="tel" placeholder="Телефон" />
-            <input
+            <input class="modal__input" type="text" id="name" name="name" placeholder="Имя" />
+            <input class="modal__input" type="tel" id="tel" name="tel" placeholder="Телефон" />
+            <input class="modal__input"
               type="email"
               id="email"
               name="email"
               placeholder="Электронная почта"
             />
-            <textarea name="message" placeholder="Сообщение"></textarea>
+            <textarea class="modal__textarea" name="message" placeholder="Сообщение"></textarea>
           </div>
           <div class="modal__send">
             <div class="modal__send-text">
@@ -626,7 +609,7 @@
             <h1 class="modal__title-text">Заказать звонок</h1>
           </div>
           <div class="modal__form">
-            <input type="tel" id="telefon" name="telefon" placeholder="Телефон" />
+            <input class="modal__input" type="tel" id="telefon" name="telefon" placeholder="Телефон" />
           </div>
           <div class="modal__send">
             <div class="modal__send-text">
