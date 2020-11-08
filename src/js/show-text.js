@@ -1,24 +1,17 @@
-
-const contentContainer = document.querySelector('.text__content');
+const contentContainer = document.querySelector(".text__content");
 const showHide = document.querySelector(".button-show");
-const textButton = document.querySelector(".button-show__text");
-const textValue = textButton.textContent;
+const textValue = showHide.textContent;
 
 showHide.addEventListener("click", function () {	
-	if (textButton.textContent === textValue) {
-		textButton.textContent = "Свернуть";
-		showHide.classList.remove("button-show--down");
-		showHide.classList.add("button-show--up");
+	if (showHide.textContent === textValue) {
+		showHide.textContent = "Свернуть";
 	} else {
-		textButton.textContent = textValue;
-		showHide.classList.remove("button-show--up");
-		showHide.classList.add("button-show--down");
+		showHide.textContent = textValue;
 	}
-	if (contentContainer.style.maxHeight) {
+	if (contentContainer.style.maxHeight ) {
 		contentContainer.style.maxHeight = contentContainer.scrollHeight + 'px';
 	} else {
-		contentContainer.classList.toggle('text__content');
+		contentContainer.classList.toggle("text__content");
+		showHide.classList.toggle("button-show--up");
 	}		
 });
-
-

@@ -11,22 +11,18 @@
   font-size: 16px;
   line-height: 24px;
   color: $txtColorBlack;
-  margin: 0 0 16px 0;
   outline: none;
-  &__text {
-	 font-family: "TT Lakes Medium";
-	 font-size: 16px;
-	 line-height: 24px;
-    color: $txtColorBlack;
-    margin: 0 0 15px -127px;
-    cursor: pointer;
-  }
-  &--down {
-    background-image: url("../img/down.svg");
-    margin: 0 8px 16px 0;
+ 
+  &__content {
+	  margin-bottom: 16px;
+	  @media (min-width: 768px) {
+		margin-bottom: 32px;
+	 }
+	 @media (min-width: 1120px) {
+		margin-bottom: 50px;
+	 }
   }
   &--up {
-    background-image: url("../img/up.svg");
-   margin: 0 8px 16px 0;
+	 background-image: url("../img/up.svg");
   }
 }

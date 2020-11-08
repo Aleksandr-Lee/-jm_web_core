@@ -28,6 +28,7 @@
   &__item {
     box-sizing: border-box;
 	 max-width: 240px;
+	 max-height: 72px;
     border: 1px solid #eaeaea;
     border-radius: 6px;
     list-style: none;
@@ -37,6 +38,7 @@
 	 
 	 &--mod {
 		padding: 16px 16px 16px 16px;
+		max-height: 160px;
 		
 	 }
     @media (min-width: 768px) {

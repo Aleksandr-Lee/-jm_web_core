@@ -2,8 +2,6 @@ const modalMenu = document.getElementById("modalMenu");
 const openMenu = document.getElementById("btnOpenMenu");
 const closeMenu = document.getElementById("btnCloseMenu");
 const body = document.querySelector("body");
-//const hidden = document.querySelector(".hidden");
-//const wrapperModal = document.querySelector(".wrapper-modal");
 
 function menuModal(button, display, overflow) {
 	button.addEventListener("click", function () {
@@ -20,7 +18,7 @@ window.addEventListener("click", function (event) {
 	  body.style.overflow = "visible";
 	}
  });
- window.addEventListener('resize', function(){
+ window.addEventListener("resize", function(){
 	if (window.innerWidth >= 1440) {
 		modalMenu.style.display = "block";
 		body.style.overflow = "visible";

@@ -34,8 +34,7 @@
             </div>
             <button class="button button__search"></button>
           </header>
-          <div class="saidbar-navigation">
-            <nav class="saidbar-menu">
+          <nav class="saidbar-navigation saidbar-menu">
               <ul class="saidbar-menu__list">
                 <li class="saidbar-menu__item">
                   <a class="saidbar-menu__link" href="#">Ремонт техники</a>
@@ -66,9 +65,7 @@
                   <a class="saidbar-menu__link" href="#">Контакты</a>
                 </li>
               </ul>
-            </nav>
-          </div>
-
+          </nav>
           <div class="saidbar-contacts">
             <button id="btnOpenCall" class="button button__tel"></button>
             <button
@@ -191,15 +188,12 @@
                     по рекомендациям и, в свою очередь, советуют нас родным и
                     близким.
                   </div>
-
                   <div class="show-more">
-                    <button
-                      id="read-more"
-                      class="button-show button-show--down"
-                    ></button>
-                    <label for="read-more" class="button-show__text"
-                      >Читать дальше</label
-                    >
+							<button
+							class="button-show button-show__content"
+						 >
+							Читать далее
+						 </button>
                   </div>
                 </div>
                 <div class="picture">
@@ -298,7 +292,7 @@
             <div class="show-more show-more--hidden">
 					<button
 					data-container="brands"
-					class="button-show button-show--down"
+					class="button-show button-show__content"
 				 >
 					Показать всё
 				 </button>
@@ -382,7 +376,7 @@
             	<button
 					data-container="technics"
 					id="read"
-					class="button-show button-show--down"
+					class="button-show button-show__content"
 				 >
 					Показать всё
 				 </button>

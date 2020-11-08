@@ -6,9 +6,7 @@
 	&--hidden {
 	  display: none;
 	  @media (min-width: 768px) {
-		 display: flex;
-		 justify-content: flex-start;
-		 align-items: center;
+		 display: block;
 	  }
 	}
  }
