@@ -1,3 +1,5 @@
+https://aleksandr-lee.github.io/jm_web_core/
+
 # Webpack Static Site Starter Kit
 
 ## Features
